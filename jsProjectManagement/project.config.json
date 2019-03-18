@@ -6,7 +6,10 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false,
+		"uglifyFileName": true,
+		"nodeModules": true
 	},
 	"appid": "wx9fcc8ca86fa26dd6",
 	"projectname": "jsProjectManagement",

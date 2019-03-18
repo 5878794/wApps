@@ -1,5 +1,20 @@
 //index.js
 const app = getApp()
+let regeneratorRuntime = require('../../js/runtime.js');
+
+let c = async function(){
+    console.log(1);
+    await b();
+  console.log(2);
+};
+let b= function(){
+    return new Promise(success=>{
+      setTimeout(function(){
+          success();
+      },2000)
+    })
+};
+
 
 Page({
   data: {
@@ -11,6 +26,7 @@ Page({
   },
 
   onLoad: function() {
+    c();
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',
