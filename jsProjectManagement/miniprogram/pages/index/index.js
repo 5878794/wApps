@@ -1,6 +1,6 @@
 //index.js
 const app = getApp()
-let regeneratorRuntime = require('../../js/runtime.js');
+let regeneratorRuntime = require('../../js/regeneratorRuntime.js');
 
 let c = async function(){
     console.log(1);
