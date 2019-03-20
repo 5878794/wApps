@@ -25,7 +25,7 @@
                         </view>
                     </view>
                     <view class='boxflex1 box_hcc' style='height:152rpx;'>
-                        <canvas canvas-id='canvas1' style='display:block;'></canvas>
+                        <canvas canvas-id='canvas1'></canvas>
                     </view>
                 </view>
                 <view class='box_hcc index_day_right_row'>
@@ -38,7 +38,7 @@
                         </view>
                     </view>
                     <view class='boxflex1 box_hcc' style='height:152rpx;'>
-                        <canvas canvas-id='canvas2' style='display:block;'></canvas>
+                        <canvas canvas-id='canvas2'></canvas>
                     </view>
                 </view>
 
