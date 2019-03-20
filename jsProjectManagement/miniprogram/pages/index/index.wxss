@@ -9,8 +9,14 @@
     margin:0 30rpx 0 60rpx;
 }
 
+
+
+.index_dayMain{
+    width:100%; position:relative;
+}
+
 .index_day{
-    padding:40rpx; width:100%;
+    padding:40rpx; width:750rpx;
 }
 
 .index_day_left_day{
@@ -58,4 +64,21 @@
 
 .index_day_right_row:first-child{
     border-bottom:1rpx solid #eee;
+}
+.index_day_right_row canvas{
+    width:150rpx; height:150rpx;
+}
+
+
+.index_dayMain_left{
+    position:absolute;
+    left:0;top:50%;
+    width:38rpx; height:116rpx;
+    margin-top:-58rpx;
+}
+.index_dayMain_right{
+    position:absolute;
+    right:0;top:50%;
+    width:38rpx; height:116rpx;
+    margin-top:-58rpx;
 }

@@ -7,44 +7,46 @@
     </view>
 
 
-
-    <view class='box_hcc index_day border_box'>
-        <view class='box_scc index_day_left'>
-            <image src='../../images/day.png'></image>
-            <view class='index_day_left_day'>2019.03.03</view>
-            <view class='index_day_left_week'>星期一</view>
-        </view>
-        <view class='box_scc boxflex1 index_day_right border_box'>
-            <view class='box_hcc index_day_right_row'>
-                <view class='box_scc index_day_right_left'>
-                    <view>今日任务 上午</view>
-                    <view class='diandian'>一整未见产品设计</view>
-                    <view class='box_hcc'>
-                        <view class='index_day_btn1'>完成</view>
-                        <view class='index_day_btn2'>延期</view>
+    <view class='index_dayMain'>
+        <view class='box_hcc index_day border_box'>
+            <view class='box_scc index_day_left'>
+                <image src='../../images/day.png'></image>
+                <view class='index_day_left_day'>2019.03.03</view>
+                <view class='index_day_left_week'>星期一</view>
+            </view>
+            <view class='box_scc boxflex1 index_day_right border_box'>
+                <view class='box_hcc index_day_right_row'>
+                    <view class='box_scc index_day_right_left'>
+                        <view>今日任务 上午</view>
+                        <view class='diandian'>一整未见产品设计</view>
+                        <view class='box_hcc'>
+                            <view class='index_day_btn1'>完成</view>
+                            <view class='index_day_btn2'>延期</view>
+                        </view>
+                    </view>
+                    <view class='boxflex1 box_hcc' style='height:152rpx;'>
+                        <canvas canvas-id='firstCanvas' style='display:block;'></canvas>
                     </view>
                 </view>
-                <view class='boxflex1'>
-                    <canvas></canvas>
-                </view>
-            </view>
-            <view class='box_hcc index_day_right_row'>
-                <view class='box_scc index_day_right_left'>
-                    <view>今日任务 上午</view>
-                    <view class='diandian'>一整未见产品设计</view>
-                    <view class='box_hcc'>
-                        <view class='index_day_btn1'>完成</view>
-                        <view class='index_day_btn2'>延期</view>
+                <view class='box_hcc index_day_right_row'>
+                    <view class='box_scc index_day_right_left'>
+                        <view>今日任务 上午</view>
+                        <view class='diandian'>一整未见产品设计</view>
+                        <view class='box_hcc'>
+                            <view class='index_day_btn1'>完成</view>
+                            <view class='index_day_btn2'>延期</view>
+                        </view>
+                    </view>
+                    <view class='boxflex1'>
+                        <canvas></canvas>
                     </view>
                 </view>
-                <view class='boxflex1'>
-                    <canvas></canvas>
-                </view>
-            </view>
 
+            </view>
         </view>
+        <image src='../../images/left_arrow.png' class='index_dayMain_left'></image>
+        <image src='../../images/right_arrow.png' class='index_dayMain_right'></image>
     </view>
-
 
 
     <view class='box_hcc'>

@@ -225,13 +225,9 @@ module.exports = {
     //@param:id    .class/#id
     getDomParam(id) {
         return new Promise(success=>{
-            console.log('in 1')
             let query = wx.createSelectorQuery();
-            console.log('in 2')
             query.select(id).boundingClientRect();
-            console.log('in 3')
             query.exec(function (res) {
-                console.log('re '+JSON.stringify(res))
                 if(res[0]){
                     let backData = res[0] || {
                             top:0,
