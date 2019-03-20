@@ -23,7 +23,8 @@ wxApp.ready({
 		console.log(data)
 
 
-		this.createCanvas('firstCanvas',15);
+		this.createCanvas('canvas1',15);
+		this.createCanvas('canvas2',45);
 	},
 
 
@@ -58,13 +59,14 @@ wxApp.ready({
 		context.arc(canvasCenter,canvasCenter,canvasCenter*0.9,startDeg,endDeg);
 		context.stroke();
 
+		context.beginPath();
 		context.setLineWidth(1);
 		context.font = 'bold 16px Arial';
 		context.textAlign = 'center';
 		context.textBaseline = 'middle';
 		context.fillStyle = '#666';
 		context.fillText(per+"%", canvasCenter, canvasCenter);
-
+		context.stroke();
 
 		context.draw();
 

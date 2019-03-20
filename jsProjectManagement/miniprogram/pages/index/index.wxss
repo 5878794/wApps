@@ -17,6 +17,7 @@
 
 .index_day{
     padding:40rpx; width:750rpx;
+    padding-left:50rpx;
 }
 
 .index_day_left_day{
@@ -37,6 +38,11 @@
 }
 .index_day_right_left{
     width:310rpx;
+}
+
+.index_day_right_left .index_day_name{
+    width:100%; text-align:center;
+    height:40rpx; padding:0 20rpx;
 }
 
 .index_day_right_row{

@@ -1,4 +1,4 @@
-<view>
+<view class='page'>
 
 
     <view class='box_hlc index_top'>
@@ -18,27 +18,27 @@
                 <view class='box_hcc index_day_right_row'>
                     <view class='box_scc index_day_right_left'>
                         <view>今日任务 上午</view>
-                        <view class='diandian'>一整未见产品设计</view>
+                        <view class='diandian index_day_name'>一整未见产品设计一整未见产品设计</view>
                         <view class='box_hcc'>
                             <view class='index_day_btn1'>完成</view>
                             <view class='index_day_btn2'>延期</view>
                         </view>
                     </view>
                     <view class='boxflex1 box_hcc' style='height:152rpx;'>
-                        <canvas canvas-id='firstCanvas' style='display:block;'></canvas>
+                        <canvas canvas-id='canvas1' style='display:block;'></canvas>
                     </view>
                 </view>
                 <view class='box_hcc index_day_right_row'>
                     <view class='box_scc index_day_right_left'>
                         <view>今日任务 上午</view>
-                        <view class='diandian'>一整未见产品设计</view>
+                        <view class='diandian index_day_name'>一整未见产品设计一整未见产品设计</view>
                         <view class='box_hcc'>
                             <view class='index_day_btn1'>完成</view>
                             <view class='index_day_btn2'>延期</view>
                         </view>
                     </view>
-                    <view class='boxflex1'>
-                        <canvas></canvas>
+                    <view class='boxflex1 box_hcc' style='height:152rpx;'>
+                        <canvas canvas-id='canvas2' style='display:block;'></canvas>
                     </view>
                 </view>
 
