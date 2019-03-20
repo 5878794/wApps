@@ -271,10 +271,42 @@ module.exports = {
 
 
     sleep(ms){
-        return new Promise(success=>{
-            setTimeout(function(){
+        return new Promise(success=> {
+            setTimeout(function () {
                 success();
-            },ms)
+            }, ms)
+        })
+    },
+
+
+    //直接获取用户信息
+    getUserInfo(){
+        return new Promise(function(success,error){
+            wx.getSetting({
+                success:function(res){
+                    if (res.authSetting['scope.userInfo']){
+                        wx.getUserInfo({
+                            success:function(res){
+                                let backData = {
+                                    icon:res.userInfo.avatarUrl,
+                                    nickname:res.userInfo.nickName,
+                                    gender:res.userInfo.gender   //性别 0：未知、1：男、2：女
+                                };
+                                success(backData)
+
+                            },
+                            fail:function(e){
+                                error(e);
+                            }
+                        })
+                    }else{
+                        success({});
+                    }
+                }
+            })
         })
     }
+
+
+
 };

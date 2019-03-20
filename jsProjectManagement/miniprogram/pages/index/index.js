@@ -5,17 +5,31 @@ const regeneratorRuntime = require('../../js/regeneratorRuntime.js'),
 
 wxApp.ready({
     data:{},
-    onLoad:function(){
-        console.log(this)
-        this.checkWxVer();
+	onLoad:function(){
+        this.init().then(rs=>{
 
-
-
-
+        	console.log('page ok')
+        }).catch(e=>{
+			console.log(e);
+        });
       // console.log(1233)
     },
-    checkWxVer:()=>{
-        if(wx.cloud){
+	init:async function(){
+		this.checkWxVer();
+
+		//获取用户信息
+		//未授权返回空对象
+		let data = await wxApp.getUserInfo();
+		console.log(data)
+
+
+
+	},
+
+
+	//检查是否支持云函数的微信版本
+    checkWxVer:function(){
+        if(!wx.cloud){
             wx.redirectTo({
                 url: '../notSupport/notSupport',
             });
@@ -33,12 +47,6 @@ wxApp.ready({
 //
 //   onLoad: function() {
 //
-//     if (!wx.cloud) {
-//       wx.redirectTo({
-//         url: '../chooseLib/chooseLib',
-//       })
-//       return
-//     }
 //
 //     // 获取用户信息
 //     wx.getSetting({
