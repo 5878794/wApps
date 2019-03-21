@@ -1,0 +1,31 @@
+<template name="taskList">
+    <view class='template_taskList box_hcc'>
+        <view class='template_taskList_list_bg'>
+            <view class="template_taskList_list_bg_main1"></view>
+        </view>
+        <view class='box_scc boxflex1 template_taskList_list_main'>
+            <view class="template_taskList_list_style box_hlc">
+                <view class="create">我建立的项目</view>
+                <view class="run">项目进行中</view>
+            </view>
+            <view class="template_taskList_list_name">项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称</view>
+            <view class='box_hlc template_taskList_list_title'>
+                <view class="boxflex1">项目上线还有<text>12</text>天</view>
+            </view>
+            <view class="template_taskList_list_ts box_hlc">
+                <image src="../../images/icon2.png"></image>
+                <text>2人完成计划</text>
+            </view>
+            <view class="template_taskList_state box_hlc">
+                <image src="../../images/icon3.png"></image>
+                <text>2人延期</text>
+                <image src="../../images/icon4.png"></image>
+                <text>1人未填写</text>
+            </view>
+        </view>
+        <view class='template_taskList_list_bg'>
+            <view class="template_taskList_list_bg_main2"></view>
+        </view>
+    </view>
+    
+</template>

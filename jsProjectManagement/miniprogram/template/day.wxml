@@ -1,0 +1,40 @@
+<template name="day">
+    <view class='box_hcc template_day border_box'>
+        <view class='box_scc template_day_left'>
+            <image src='../../images/day.png'></image>
+            <view class='template_day_left_day'>2019.03.03</view>
+            <view class='template_day_left_week'>星期一</view>
+        </view>
+        <view class='box_scc boxflex1 template_day_right border_box'>
+            <view class='box_hcc template_day_right_row'>
+                <view class='box_scc template_day_right_left'>
+                    <view>今日任务 上午</view>
+                    <view class='diandian template_day_name'>一整未见产品设计一整未见产品设计</view>
+                    <view class='box_hcc'>
+                        <view class='template_day_btn1'>完成</view>
+                        <view class='template_day_btn2'>延期</view>
+                    </view>
+                </view>
+                <view class='boxflex1 box_hcc' style='height:152rpx;'>
+                    <canvas canvas-id='canvas1'></canvas>
+                </view>
+            </view>
+            <view class='box_hcc template_day_right_row'>
+                <view class='box_scc template_day_right_left'>
+                    <view>今日任务 上午</view>
+                    <view class='diandian template_day_name'>一整未见产品设计一整未见产品设计</view>
+                    <view class='box_hcc'>
+                        <view class='template_day_btn1'>完成</view>
+                        <view class='template_day_btn2'>延期</view>
+                    </view>
+                </view>
+                <view class='boxflex1 box_hcc' style='height:152rpx;'>
+                    <canvas canvas-id='canvas2'></canvas>
+                </view>
+            </view>
+
+        </view>
+    </view>
+
+
+</template>

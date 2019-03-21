@@ -1,0 +1,67 @@
+
+.template_taskList{
+  margin:20rpx 0; position: relative;
+}
+.template_taskList_list_bg{
+  width:30rpx;
+}
+.template_taskList_list_bg_main1{
+  background: #48e8d7; position: absolute;
+  width:30rpx;
+  left:0; top:40rpx; bottom:40rpx;
+}
+.template_taskList_list_bg_main2{
+  background: #48e8d7; position: absolute;
+  width:30rpx;
+  right:0; top:40rpx; bottom:40rpx;
+}
+.template_taskList_list_main{
+  padding:20rpx 50rpx;
+  border:1rpx solid #eee; border-radius:10rpx;
+  box-shadow:0 0 20rpx #ccc;
+}
+.template_taskList_list_title{
+  font-size: 24rpx; width: 100%;
+  margin:5rpx 0;
+  color: #999;
+}
+.template_taskList_list_title text{
+  color: blue; padding:0 5rpx;
+}
+
+.template_taskList_list_name{
+  width: 100%; font-size: 28rpx;
+  box-sizing: border-box; padding: 20rpx 0;
+}
+.template_taskList_list_ts{
+  font-size: 22rpx; width:100%; color: #666;
+  margin: 5rpx 0;
+}
+.template_taskList_list_ts image{
+  width:28rpx; height: 28rpx; margin: 0 15rpx 0 0;
+}
+
+.template_taskList_state{
+  font-size:20rpx; width:100%; margin: 5rpx 0;
+  color:#585858;
+}
+.template_taskList_state image{
+  width:26rpx; height: 26rpx; margin: 0 10rpx 0 0;
+}
+.template_taskList_state text{
+  padding-right: 30rpx;
+}
+
+
+.template_taskList_list_style{
+  font-size:20rpx; width:100%; margin: 5rpx 0;
+  color:#fff;
+}
+.template_taskList_list_style view{
+  background:#1724d1;
+  border-radius:200px;
+  height:40rpx;
+  padding:0 20rpx;
+  line-height: 40rpx;
+  margin-right: 20rpx;
+}

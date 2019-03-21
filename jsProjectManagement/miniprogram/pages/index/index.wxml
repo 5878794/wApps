@@ -1,3 +1,6 @@
+<import src="../../template/day.wxml"/>
+<import src="../../template/taskList.wxml"/>
+
 <view class='page'>
 
 
@@ -8,65 +11,24 @@
 
 
     <view class='index_dayMain'>
-        <view class='box_hcc index_day border_box'>
-            <view class='box_scc index_day_left'>
-                <image src='../../images/day.png'></image>
-                <view class='index_day_left_day'>2019.03.03</view>
-                <view class='index_day_left_week'>星期一</view>
-            </view>
-            <view class='box_scc boxflex1 index_day_right border_box'>
-                <view class='box_hcc index_day_right_row'>
-                    <view class='box_scc index_day_right_left'>
-                        <view>今日任务 上午</view>
-                        <view class='diandian index_day_name'>一整未见产品设计一整未见产品设计</view>
-                        <view class='box_hcc'>
-                            <view class='index_day_btn1'>完成</view>
-                            <view class='index_day_btn2'>延期</view>
-                        </view>
-                    </view>
-                    <view class='boxflex1 box_hcc' style='height:152rpx;'>
-                        <canvas canvas-id='canvas1'></canvas>
-                    </view>
-                </view>
-                <view class='box_hcc index_day_right_row'>
-                    <view class='box_scc index_day_right_left'>
-                        <view>今日任务 上午</view>
-                        <view class='diandian index_day_name'>一整未见产品设计一整未见产品设计</view>
-                        <view class='box_hcc'>
-                            <view class='index_day_btn1'>完成</view>
-                            <view class='index_day_btn2'>延期</view>
-                        </view>
-                    </view>
-                    <view class='boxflex1 box_hcc' style='height:152rpx;'>
-                        <canvas canvas-id='canvas2'></canvas>
-                    </view>
-                </view>
-
-            </view>
-        </view>
+        <template is="day" data=""></template>
         <image src='../../images/left_arrow.png' class='index_dayMain_left'></image>
         <image src='../../images/right_arrow.png' class='index_dayMain_right'></image>
     </view>
 
 
-    <view class='box_hcc'>
+    <view class='box_hcc index_project'>
         <view>项目列表</view>
-        <view class='btm'>添加项目</view>
-    </view>
-
-
-
-    <view class='list'>
-        <view class='bg...'></view>
-        <view class='box_hcc main...'>
-            <view class='box_hcc'>
-                <view>未参与的项目</view>
-                <view>项目上线还有12天</view>
-            </view>
-            <view>项目名称</view>
-            <view>2人未完成当日计划</view>
+        <view class="boxflex1"></view>
+        <view class='index_project_add'>
+            <image src="../../images/add.png"></image>
+            <text>添加项目</text>
         </view>
     </view>
+
+
+    <template is="taskList" data=""></template>
+
 
 
 </view>

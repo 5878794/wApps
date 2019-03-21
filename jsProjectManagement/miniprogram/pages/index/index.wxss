@@ -1,4 +1,4 @@
-@import "../../style/all.wxss";
+
 
 .index_top{
     width:100%; height:130rpx; border-bottom:1rpx solid #eee;
@@ -15,65 +15,7 @@
     width:100%; position:relative;
 }
 
-.index_day{
-    padding:40rpx; width:750rpx;
-    padding-left:50rpx;
-}
 
-.index_day_left_day{
-    font-size:24rpx; padding:30rpx 0 20rpx 0;
-}
-.index_day_left image{
-    width:88rpx; height:74rpx; display:block;
-}
-.index_day_left_week{
-    font-size:34rpx;
-}
-
-.index_day_right{
-    border-radius:10rpx;
-    box-shadow:0 0 30rpx #ccc;
-    border:1rpx solid #eee;
-    margin:0 20rpx;
-}
-.index_day_right_left{
-    width:310rpx;
-}
-
-.index_day_right_left .index_day_name{
-    width:100%; text-align:center;
-    height:40rpx; padding:0 20rpx;
-}
-
-.index_day_right_row{
-    width:100%; height:200rpx;
-    font-size:24rpx;
-    line-height:48rpx;
-    padding:24rpx 0 ;
-}
-.index_day_btn1{
-    color:#0000e9; padding:0 30rpx; margin: 0 10rpx;
-    box-shadow:0 5rpx 5rpx #ccc;
-    border-radius:20rpx;
-    line-height:40rpx;
-    font-size:20rpx;
-    padding-top:20rpx;
-}
-.index_day_btn2{
-    padding:0 30rpx; margin: 0 10rpx;
-    box-shadow:0 5rpx 5rpx #ccc;
-    border-radius:20rpx;
-    line-height:40rpx;
-    font-size:20rpx;
-    padding-top:15rpx;
-}
-
-.index_day_right_row:first-child{
-    border-bottom:1rpx solid #eee;
-}
-.index_day_right_row canvas{
-    width:150rpx; height:150rpx;
-}
 
 
 .index_dayMain_left{
@@ -88,3 +30,25 @@
     width:38rpx; height:116rpx;
     margin-top:-58rpx;
 }
+
+
+.index_project{
+    padding:55rpx 35rpx;
+    font-size:30rpx;
+}
+.index_project_add{
+    background: linear-gradient(90deg,#1204c7,#2371ef);
+    position: relative;
+    width: 210rpx; height: 70rpx;
+    border-radius: 70rpx;
+    color: #fff; font-size: 22rpx;
+    padding-left:80rpx;
+    line-height: 70rpx;
+    box-shadow: 0 10rpx 10rpx #ccc;
+}
+.index_project_add image{
+    position: absolute; left:35rpx; top:23rpx;
+    width:24rpx; height: 24rpx;
+}
+
+
