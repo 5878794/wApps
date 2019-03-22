@@ -55,13 +55,91 @@
 
 .template_taskList_list_style{
   font-size:20rpx; width:100%; margin: 5rpx 0;
-  color:#fff;
 }
-.template_taskList_list_style view{
+
+.template_taskList_tag1{
   background:#1724d1;
+  box-sizing: border-box;
+  border:2rpx solid #1724d1;
   border-radius:200px;
   height:40rpx;
   padding:0 20rpx;
-  line-height: 40rpx;
+  line-height: 36rpx;
+  margin-right: 20rpx;
+  color:#fff;
+}
+.template_taskList_tag2{
+  background:#fff;
+  color:#1724d1;
+  box-sizing: border-box;
+  border:2rpx solid #1724d1;
+  border-radius:200px;
+  height:40rpx;
+  padding:0 20rpx;
+  line-height: 36rpx;
   margin-right: 20rpx;
 }
+
+
+
+
+.create .template_taskList_tag1{
+  background:#1724d1;
+  border-color: #1724d1;
+}
+.join .template_taskList_tag1{
+  background:#ca49d0;
+  border-color: #ca49d0;
+}
+
+.notMe .template_taskList_tag1{
+  display: none;
+}
+
+.notStart .template_taskList_tag2{
+  border-color:#8384ae;
+  color:#8384ae;
+}
+.running .template_taskList_tag2{
+  border-color:#1724d1;
+  color:#1724d1;
+}
+
+
+
+.end .template_taskList_tag1{
+  background:#c8c8c8;
+  border-color: #c8c8c8;
+}
+.end .template_taskList_tag2{
+  border-color: #c8c8c8;
+  color:#c8c8c8
+}
+
+.notStart .template_taskList_list_bg_main1,
+.notStart .template_taskList_list_bg_main2{
+  background:#ccf2ef;
+}
+
+.running .template_taskList_list_bg_main1,
+.running .template_taskList_list_bg_main2{
+  background:#41ebdf;
+}
+
+.end .template_taskList_list_bg_main1,
+.end .template_taskList_list_bg_main2{
+  background:#c8c8c8;
+}
+
+
+.notStart .template_taskList_list_title{display:flex;}
+.notStart .template_taskList_list_ts{display: flex;}
+.notStart .template_taskList_state{display:none;}
+
+.running .template_taskList_list_title{display: flex;}
+.running .template_taskList_list_ts{display: none;}
+.running .template_taskList_state{display:flex;}
+
+.end .template_taskList_list_title{display: none;}
+.end .template_taskList_list_ts{display: none;}
+.end .template_taskList_state{display:none;}

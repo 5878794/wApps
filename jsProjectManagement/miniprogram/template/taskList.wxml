@@ -1,12 +1,19 @@
 <template name="taskList">
-    <view class='template_taskList box_hcc'>
+    <!--状态分2种-->
+
+    <!--创建  create、参与 join 、与自己无关 notMe-->
+
+    <!--项目未开始 notStart、项目进行中 running、项目已结束 end-->
+
+
+    <view class='template_taskList box_hcc notMe end'>
         <view class='template_taskList_list_bg'>
             <view class="template_taskList_list_bg_main1"></view>
         </view>
         <view class='box_scc boxflex1 template_taskList_list_main'>
             <view class="template_taskList_list_style box_hlc">
-                <view class="create">我建立的项目</view>
-                <view class="run">项目进行中</view>
+                <view class="template_taskList_tag1">我建立的项目</view>
+                <view class="template_taskList_tag2">项目进行中</view>
             </view>
             <view class="template_taskList_list_name">项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称项目名称</view>
             <view class='box_hlc template_taskList_list_title'>
