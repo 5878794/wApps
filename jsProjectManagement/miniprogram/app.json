@@ -1,7 +1,10 @@
 {
   "pages": [
+    "pages/createProject/createProject",
     "pages/index/index",
     "pages/notSupport/notSupport",
+
+
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",

@@ -1,0 +1,71 @@
+<view class="box_sct project_main">
+    <view class="project_input_row">
+        <input value="{{taskName}}"
+               id="taskName"
+               bindinput="inputChange"
+               type="text"
+               placeholder="任务名称">
+        </input>
+    </view>
+    <picker
+            mode="date"
+            id="taskDate"
+            value="{{taskDate}}"
+            start="2019-01-01"
+            end="2017-09-01"
+            bindchange="inputChange"
+    >
+        <view class="project_input_row">
+            <text style="color:{{(taskDate)? '#333':'#999'}}">{{(taskDate=='')? '目标完成时间' : taskDate}}</text>
+            <image src="../../images/icon5.png"></image>
+        </view>
+    </picker>
+    <view class="project_input_row dash_line">
+        <input id="taskType"
+               bindinput="inputChange"
+               class="project_type_add_input"
+               type="text"
+               placeholder="主要工作项目">
+
+        </input>
+        <image class="project_type_add canTap" src="../../images/icon6.png"></image>
+    </view>
+    <view class="project_input_row box_hlc box_lines">
+        <view class="project_task_list">
+            <view>需求文档</view>
+            <view class="close">x</view>
+        </view>
+        <view class="project_task_list">
+            <view>需求文档</view>
+            <view class="close">x</view>
+        </view>
+        <view class="project_task_list">
+            <view>需求文档</view>
+            <view class="close">x</view>
+        </view>
+        <view class="project_task_list">
+            <view>需求文档</view>
+            <view class="close">x</view>
+        </view>
+        <view class="project_task_list">
+            <view>需求文档</view>
+            <view class="close">x</view>
+        </view>
+        <view class="project_task_list">
+            <view>需求文档</view>
+            <view class="close">x</view>
+        </view>
+    </view>
+    <view class="project_input_row">
+        <input id="taskPassword"
+               bindinput="inputChange"
+               type="text"
+               password="true"
+               placeholder="密码">
+        </input>
+    </view>
+    <view style="height:40rpx; width:100%;"></view>
+</view>
+
+
+<view class="submit_btn canTap">新建任务</view>

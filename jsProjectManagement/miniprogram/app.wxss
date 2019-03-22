@@ -4,3 +4,16 @@
 @import "./template/taskList.wxss";
 
 
+
+
+.submit_btn{
+  background:#1725d1;
+  box-shadow:0 6rpx 8rpx 4rpx rgba(23,37,209,0.20);
+  border-radius:200rpx;
+  width:400rpx;
+  height:92rpx;
+  color:#fff; margin: 0 auto;
+  text-align: center; line-height: 92rpx;
+}
+
+

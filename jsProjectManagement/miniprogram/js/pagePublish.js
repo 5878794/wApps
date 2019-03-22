@@ -1,5 +1,6 @@
 module.exports = {
     inputChange(e){
+        console.log('--')
         let id = e.target.id,
             val = e.detail.value,
             newObj = {};
