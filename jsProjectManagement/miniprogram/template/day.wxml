@@ -6,6 +6,7 @@
             <view class='template_day_left_week'>星期一</view>
         </view>
         <view class='box_scc boxflex1 template_day_right border_box'>
+            <!--正常情况-->
             <view class='box_hcc template_day_right_row'>
                 <view class='box_scc template_day_right_left'>
                     <view>今日任务 上午</view>
@@ -32,7 +33,19 @@
                     <canvas canvas-id='canvas2'></canvas>
                 </view>
             </view>
-
+            <!--已完成所有-->
+            <view class="box_scc template_day_complete">
+                <image src="../../images/icon9.png"></image>
+                <view>您已完成所有计划</view>
+            </view>
+            <!--无任务 进入下一任务-->
+            <view class="box_scc template_day_next">
+                <view class="template_day_next_noTask">无任务</view>
+                <view class="box_hlc template_day_next_btn">
+                    <image src="../../images/icon10.png"></image>
+                    <text>进入下一项任务</text>
+                </view>
+            </view>
         </view>
     </view>
 

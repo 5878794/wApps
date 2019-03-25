@@ -57,3 +57,41 @@
 .template_day_right_row canvas{
   width:150rpx; height:150rpx;
 }
+
+
+.template_day_complete image {
+  width: 92rpx; height: 92rpx; margin-top: 110rpx;
+}
+.template_day_complete view{
+  font-size:24rpx;
+  color:#353535;
+  text-align: center;
+  margin: 53rpx 0 115rpx 0;
+}
+
+
+.template_day_next{
+  width: 100%;
+}
+.template_day_next_noTask{
+  width: 100%; box-sizing:border-box;
+  padding:122rpx 0 0 118rpx;
+  font-size:24rpx;
+  color:#353535;
+  text-align:left;
+}
+.template_day_next_btn{
+  background:#ffffff;
+  box-shadow:0 4rpx 8rpx 0 rgba(201,201,201,0.50);
+  border-radius:14rpx;
+  width:264rpx;
+  height:68rpx;
+  font-size:24rpx;
+  color:#353535;
+  text-align:left;
+  margin:55rpx 0 126rpx 0;
+}
+.template_day_next_btn image{
+  width: 36rpx; height: 36rpx; margin-right: 18rpx;
+  margin-left: 20rpx;
+}
