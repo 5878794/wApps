@@ -1,8 +1,10 @@
 {
   "pages": [
-    "pages/createProject/createProject",
+
+    "pages/createPlan/createPlan",
     "pages/index/index",
     "pages/notSupport/notSupport",
+    "pages/createProject/createProject",
 
 
     "pages/userConsole/userConsole",

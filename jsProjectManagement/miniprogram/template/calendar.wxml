@@ -1,0 +1,51 @@
+<template name="calendar">
+    <view class="template_calendar">
+        <view class="template_calendar_title">2019年三月</view>
+        <view class="template_calendar_row_t box_hcc">
+            <view class="template_calendar_row_item1">Mon</view>
+            <view class="template_calendar_row_item1">Tues</view>
+            <view class="template_calendar_row_item1">Wed</view>
+            <view class="template_calendar_row_item1">Thur</view>
+            <view class="template_calendar_row_item1">Fri</view>
+            <view class="template_calendar_row_item1">Sat</view>
+            <view class="template_calendar_row_item1">Sun</view>
+        </view>
+        <view class="template_calendar_row box_hcc">
+            <view class="template_calendar_row_item canTap">
+                <view class="template_calendar_item_left"></view>
+                <view class="template_calendar_item_right"></view>
+                <view style='background:#ccc;' class="template_calendar_item_text">1</view>
+            </view>
+            <view class="template_calendar_row_item canTap">
+                <view class="template_calendar_item_left"></view>
+                <view class="template_calendar_item_right"></view>
+                <view class="template_calendar_item_text">1</view>
+            </view>
+            <view class="template_calendar_row_item canTap">
+                <view class="template_calendar_item_left"></view>
+                <view class="template_calendar_item_right"></view>
+                <view class="template_calendar_item_text">1</view>
+            </view>
+            <view class="template_calendar_row_item canTap">
+                <view class="template_calendar_item_left"></view>
+                <view class="template_calendar_item_right"></view>
+                <view class="template_calendar_item_text">1</view>
+            </view>
+            <view class="template_calendar_row_item canTap">
+                <view class="template_calendar_item_left"></view>
+                <view class="template_calendar_item_right"></view>
+                <view class="template_calendar_item_text">1</view>
+            </view>
+            <view class="template_calendar_row_item canTap">
+                <view class="template_calendar_item_left"></view>
+                <view class="template_calendar_item_right"></view>
+                <view class="template_calendar_item_text">1</view>
+            </view>
+            <view class="template_calendar_row_item canTap">
+                <view class="template_calendar_item_left"></view>
+                <view class="template_calendar_item_right"></view>
+                <view class="template_calendar_item_text">1</view>
+            </view>
+        </view>
+    </view>
+</template>

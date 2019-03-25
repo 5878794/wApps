@@ -8,10 +8,15 @@
 .project_input_row,
 picker{
     width: 100%; height: 130rpx; padding:0 40rpx;
-    border-bottom:2rpx solid #eee;
     font-size:24rpx; color: #a7a7a7;
     position: relative;
+    border-bottom:2rpx solid #eee;
+    //box-sizing: border-box;
 }
+picker{
+    padding:0;
+}
+
 .project_input_row input,
 .project_input_mn{
     width:100%; height: 130rpx; display: block;
@@ -57,4 +62,21 @@ picker{
 
 .project_input_row .project_type_add_input{
     width:500rpx;
+}
+.submit_btn{
+    margin-bottom: 80rpx;
+}
+
+
+.plan_type_select image{
+    width: 22rpx; height: 42rpx;
+    right:51rpx;
+}
+.plan_textarea{
+    height: auto;
+}
+.plan_textarea textarea{
+    width: 100%; min-height: 160rpx;
+    margin: 40rpx 0;
+    color: #333;
 }

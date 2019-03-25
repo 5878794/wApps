@@ -1,0 +1,31 @@
+.templatePlanList{
+  width:100%;
+  background:#ffffff;
+  box-shadow:0 0 24rpx 0 rgba(0,0,0,0.14);
+  margin:20rpx 0; padding:36rpx 90rpx;
+  box-sizing: border-box;
+}
+.templatePlanList_title{
+  padding-bottom: 30rpx;
+  font-size:28rpx;
+  color:#4e4e4e;
+}
+.templatePlanList_title_type{
+  background:#f0f0f0;
+  border-radius:200rpx;
+  height:44rpx; line-height: 44rpx;
+  text-align: center;
+  padding:0 20rpx;
+  font-size:18rpx;
+  color:#494949;
+  margin-left: 40rpx;
+}
+.templatePlanList_info{
+  font-size: 24rpx;
+}
+.templatePlanList_time{
+  font-size: 24rpx; margin-top: 20rpx;
+}
+.templatePlanList_close image{
+  width: 34rpx; height: 34rpx;
+}

@@ -1,0 +1,51 @@
+<import src="../../template/planList.wxml"/>
+<import src="../../template/calendar.wxml"/>
+
+<view class="box_sct project_main">
+    <view class="project_input_row">
+        <input value="{{planName}}"
+               id="planName"
+               bindinput="inputChange"
+               type="text"
+               placeholder="工作名称">
+        </input>
+    </view>
+    <picker
+            id="planDate"
+            value="{{index}}"
+            range="{{typeData}}"
+            bindchange="inputChange"
+    >
+        <view class="project_input_row plan_type_select">
+            <text style="color:{{(planDate || planDate==0 )? '#333':'#999'}}">{{(planDate || planDate==0 )? typeData[planDate] : '工作类型' }}</text>
+            <image src="../../images/icon7.png"></image>
+        </view>
+    </picker>
+    <view class="project_input_row dash_line">
+        <text>计划时间</text>
+        <image class="project_type_add canTap" src="../../images/icon5.png"></image>
+    </view>
+    <view class="project_input_row box_hlc box_lines">
+        <!--日历-->
+        <template is="calendar" data=""></template>
+    </view>
+    <view class="project_input_row plan_textarea">
+        <textarea
+                id="planInfo"
+                bindblur="inputChange"
+                auto-height
+                placeholder="工作描述"
+                placeholder-style="color:#a7a7a7;"
+        />
+    </view>
+    <view style="height:40rpx; width:100%;"></view>
+</view>
+
+
+<view class="submit_btn canTap">生成计划</view>
+
+
+<view>
+    <template is="planList" data=""></template>
+
+</view>

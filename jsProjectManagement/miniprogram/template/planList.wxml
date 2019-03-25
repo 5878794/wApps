@@ -1,0 +1,13 @@
+<template name="planList">
+    <view class="templatePlanList">
+        <view class="templatePlanList_title box_hlt">
+            <view class="boxflex1">阿迪咖啡机阿拉山口的肌肤卡拉斯京的疯狂拉升阶段发卡萨里的肌肤</view>
+            <view class="templatePlanList_title_type">日常监督</view>
+        </view>
+        <view class="templatePlanList_info">阿迪看啦放假啦快就到发卡的咖啡机阿克琉斯的风景阿迪看啦放假啦快就到发卡的咖啡机阿克琉斯的风景阿迪看啦放假啦快就到发卡的咖啡机阿克琉斯的风景</view>
+        <view class="templatePlanList_time">5.5工作日</view>
+        <view class="templatePlanList_close box_hrc">
+            <image src="../../images/icon8.png"></image>
+        </view>
+    </view>
+</template>

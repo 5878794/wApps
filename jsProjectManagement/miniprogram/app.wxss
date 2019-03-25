@@ -2,8 +2,8 @@
 
 @import "./template/day.wxss";
 @import "./template/taskList.wxss";
-
-
+@import "./template/planList.wxss";
+@import "./template/calendar.wxss";
 
 
 .submit_btn{
