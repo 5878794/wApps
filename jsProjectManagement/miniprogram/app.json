@@ -1,7 +1,5 @@
 {
   "pages": [
-
-
     "pages/index/index",
     "pages/notSupport/notSupport",
     "pages/createProject/createProject",
