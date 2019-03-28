@@ -12,6 +12,7 @@ wxApp.ready({
 	    // scrollLeft:'',
 	    // scrollTop:''
     },
+	interFn:null,
 	onLoad:function(){
         this.init().then(rs=>{
 
@@ -32,19 +33,36 @@ wxApp.ready({
 		},1000)
 
 	},
-	onPageScroll:function(e){
-		console.log(13)
-		this.setTopAndMenuStyle();
-	},
-	setTopAndMenuStyle:async function(){
-		let scroll = await wxApp.getScrollState(),
-			scrollTop = scroll.top,
-			scrollLeft = scroll.left;
-
+	touchStart:function(){
+		if(this.interFn){
+			clearInterval(this.interFn);
+			this.interFn = null;
+		}
 		this.setData({
-			titleTop:scrollTop+'px',
-			menuLeft:scrollLeft+'px'
-		});
+			titleTop:0,
+			menuLeft:0
+		})
+	},
+	touchEnd:function(){
+		let top = this.data.titleTop,
+			left = this.data.menuLeft;
+		this.interFn = setInterval(async ()=>{
+			let scroll = await wxApp.getScrollState(),
+				scrollTop = scroll.top,
+				scrollLeft = scroll.left;
+			if(scrollTop == top && scrollLeft == left){
+				clearInterval(this.interFn);
+				this.interFn = null;
+
+				this.setData({
+					titleTop:scrollTop+'px',
+					menuLeft:scrollLeft+'px'
+				});
+			}else{
+				top = scrollTop;
+				left = scrollLeft;
+			}
+		},100);
 	}
 });
 
