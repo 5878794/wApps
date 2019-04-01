@@ -1,14 +1,14 @@
 
-
+//获取日历显示数据
+//日历   周日  一  二  三  四  五  六
 
 module.exports = {
 	create(year,month){
-		let dayNumber = this.getMonthDayNumber(year,month),
+		let dayNumber = this._getMonthDayNumber(year,month),
 			date = year+'-'+month+'-'+'01',
 			weekNumber = new Date(date).getDay(),
 			backData = new Array(weekNumber);
 
-		console.log(dayNumber,date,weekNumber)
 		for(let i=0,l=dayNumber;i<l;i++){
 			backData.push(i+1);
 		}
@@ -17,7 +17,7 @@ module.exports = {
 	},
 
 	//获取月份的天数
-	getMonthDayNumber(year,month){
+	_getMonthDayNumber(year,month){
 		let day = 0;
 		switch(month){
 			case 1:
