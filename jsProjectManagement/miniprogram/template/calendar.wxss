@@ -8,14 +8,14 @@
   text-align: center;
 }
 .template_calendar_row{
-  padding: 23rpx 0;
+  padding: 23rpx 0; width: 560rpx; margin: 0 auto;
 }
 .template_calendar_row_item1{
   width: 80rpx; height: 40rpx; text-align: center;
 }
 .template_calendar_row_item{
   width: 80rpx; height: 40rpx; text-align: center;
-  position: relative;
+  position: relative; margin: 15rpx 0;
 }
 .template_calendar_item_left{
   position: absolute; width: 20rpx; height: 40rpx;

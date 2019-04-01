@@ -21,7 +21,7 @@ wxApp.ready({
 		//获取用户信息
 		//未授权返回空对象
 		let data = await wxApp.getUserInfo();
-		console.log(data)
+		console.log(data);
 
 
 		canvasChat('canvas1',15);
