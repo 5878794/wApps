@@ -1,10 +1,12 @@
 {
   "pages": [
-    "pages/createPlan/createPlan",
+    "pages/testRichText/index",
+    "pages/testPage/index",
+
     "pages/index/index",
     "pages/notSupport/notSupport",
     "pages/createProject/createProject",
-
+    "pages/createPlan/createPlan",
     "pages/table/table",
 
 

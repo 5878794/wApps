@@ -4,6 +4,7 @@
 @import "./template/taskList.wxss";
 @import "./template/planList.wxss";
 @import "./template/calendar.wxss";
+@import "./js/wxParse/wxParse.wxss";
 
 
 .submit_btn{
